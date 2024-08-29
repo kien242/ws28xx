@@ -122,8 +122,8 @@ typedef struct {
 	uint16_t           Pulse0;
 	uint16_t           Pulse1;
 	uint16_t           MaxPixel;
-	uint8_t            Pixel[WS28XX_PIXEL_MAX][3];
-	uint8_t            Buffer[(WS28XX_PIXEL_MAX * 24) + 2];
+	uint16_t           Pixel[WS28XX_PIXEL_MAX][3];
+	uint16_t           Buffer[(WS28XX_PIXEL_MAX * 24) + 2];
 
 } WS28XX_HandleTypeDef;
 
