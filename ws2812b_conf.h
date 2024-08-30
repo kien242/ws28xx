@@ -16,8 +16,8 @@
  ******************************************************************************
  */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef _NIMALTD_I_CUBE_WS28XX_CONF_H_
-#	define _NIMALTD_I_CUBE_WS28XX_CONF_H_
+#ifndef _WS2812B_CONF_H_
+#	define _WS2812B_CONF_H_
 
 #	ifdef __cplusplus
 extern "C" {
@@ -39,6 +39,9 @@ extern "C" {
 /*---------- WS28XX_PIXEL_MAX  -----------*/
 #	define WS28XX_PIXEL_MAX 256
 
+/*---------- WS28XX_PIXEL_MAX_BRIGHTNESS  -----------*/
+#	define WS28XX_PIXEL_MAX_BRIGHTNESS 255
+
 /*---------- WS28XX_PULSE_LENGTH_NS  -----------*/
 #	define WS28XX_PULSE_LENGTH_NS 1250
 
@@ -52,7 +55,7 @@ extern "C" {
 #	define WS28XX_ORDER WS28XX_ORDER_GRB
 
 /*---------- WS28XX_GAMMA  -----------*/
-#	define WS28XX_GAMMA true
+#	define WS28XX_GAMMA 0
 
 /*---------- WS28XX_RTOS  -----------*/
 #	define WS28XX_RTOS WS28XX_RTOS_DISABLE
@@ -60,7 +63,7 @@ extern "C" {
 #	ifdef __cplusplus
 }
 #	endif
-#endif /* _NIMALTD_I_CUBE_WS28XX_CONF_H_ */
+#endif /* _WS2812B_CONF_H_ */
 
 /**
  * @}
