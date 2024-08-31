@@ -11,11 +11,11 @@
 
   Version:    3.0.0
 
-  History:
-
-              3.0.0
-              - Rewrite again
-              - Support STM32CubeMx Packet installer
+  History: 3.0.0
+                  - Rewrite again
+                  - Support STM32CubeMx Packet installer
+            3.1.0 (by kien242):
+                  - Add function to change the brightness of the strip/pixel
 
 ***********************************************************************************************************/
 
@@ -122,15 +122,14 @@ extern "C" {
 
 typedef struct {
 	TIM_HandleTypeDef *HTim;
-	uint8_t            Channel;
-	uint8_t            Lock;
 	uint16_t           Pulse0;
 	uint16_t           Pulse1;
 	uint16_t           Num_Pixel;
 	uint16_t           Pixel[WS28XX_PIXEL_MAX][3];
 	uint16_t           Buffer[(WS28XX_PIXEL_MAX * 24) + 2];
+	uint8_t            Channel;
+	uint8_t            Lock;
 	uint8_t            Pixel_Brightness[(WS28XX_PIXEL_MAX)];
-
 } WS28XX_HandleTypeDef;
 
 /************************************************************************************************************

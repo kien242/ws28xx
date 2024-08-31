@@ -508,7 +508,7 @@ bool WS28XX_SetPixel_RGBW_888(WS28XX_HandleTypeDef *Handle, uint16_t Pixel, uint
  */
 bool WS28XX_Update(WS28XX_HandleTypeDef *Handle) {
 	bool     answer = true;
-	uint32_t i      = 0;
+	uint32_t i      = 1;
 	WS28XX_Lock(Handle);
 	for (uint16_t pixel = 0; pixel < Handle->Num_Pixel; pixel++) {
 		if (Handle->Pixel_Brightness[pixel] == 0) {
